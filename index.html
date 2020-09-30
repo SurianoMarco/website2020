@@ -519,23 +519,33 @@
 				<div class="item">
 					<div class="container">
 						<div class="sixteen columns" data-scrollreveal="enter bottom and move 250px over 1s">
-							<form name="ajax-form" id="ajax-form" action="https://formspree.io/f/info@marcosuriano.com" method="post">
+							<form 
+							name="ajax-form" id="ajax-form" 
+							action="https://formspree.io/f/info@marcosuriano.com" method="POST">
 								<label for="name">Nome: * 
 									<span class="error" id="err-name">Per favore inserisci un nome</span>
 								</label>
 								<input name="name" id="name" type="text" />
+
+
 								<label for="email">E-Mail: * 
 									<span class="error" id="err-email">Per favore inserisci una e-mail</span>
 									<span class="error" id="err-emailvld">Il formato della e-mail non è valido</span>
 								</label>
 								<input name="email" id="email" type="text" />
+
+
+
 								<label for="message">Messaggio:</label>
 								<textarea name="message" id="message"></textarea>
-								<button class="send_message" id="send">Invia</button>
+
+								<button class="send_message" id="send" type="submit">Invia</button>
 								<div class="error" id="err-form">C'è un problema a convalidare l'invio, riprova più tardi</div>
 								<div class="error" id="err-timedout">La connessione col server è temporaneamente assente</div>
 								<div class="error" id="err-state"></div>
 							</form>
+
+
 							<div id="ajaxsuccess">Grazie, vi ricontatteremo al più presto!!</div>		
 						</div>			
 					</div>
