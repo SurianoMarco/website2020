@@ -4,7 +4,7 @@ const context = canvas.getContext("2d");
 
 const frameCount = 147;
 const currentFrame = index => (
-  `https://firebasestorage.googleapis.com/v0/b/marco-suriano.appspot.com/o/${index.toString().padStart(4, '0')}.png?alt=media&token=056db127-ce24-43d3-99b1-ea3d9f8cd0f5`
+  `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${index.toString().padStart(4, '0')}.jpg`
 )
 
 const preloadImages = () => {
