@@ -4,7 +4,7 @@ const context = canvas.getContext("2d");
 
 const frameCount = 147;
 const currentFrame = index => (
-  `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${index.toString().padStart(4, '0')}.jpg`
+  `https://firebasestorage.googleapis.com/v0/b/marco-suriano.appspot.com/o/${index.toString().padStart(4, '0')}.webp?alt=media&token=3372c0be-e72b-4b71-8130-629f5dce3795`
 )
 
 var images = [] // since everything else is 1-indexed, explicitly fill images[0]
