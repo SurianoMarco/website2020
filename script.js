@@ -7,12 +7,12 @@ const currentFrame = index => (
   `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${index.toString().padStart(4, '0')}.jpg`
 )
 
-const preloadImages = () => {
+var images = [] // since everything else is 1-indexed, explicitly fill images[0]
+function preloadImages() {
   for (let i = 1; i < frameCount; i++) {
-    const img = new Image();
-    img.src = currentFrame(i);
-    }
-  
+    images[i] = new Image();
+    images[i].src = currentFrame(i);
+  }
 };
 
 window.addEventListener("scroll", (event) => {
@@ -36,8 +36,7 @@ img.onload=function(){
 }
 
 const updateImage = index => {
-  img.src = currentFrame(index);
-  context.drawImage(img, 0, 0);
+  context.drawImage(images[index], 0, 0); 
 }
 
 window.addEventListener('scroll', () => {  
